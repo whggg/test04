@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<script src="js/flexible.debug.js"></script>
+	<script src="js/flexible_css.debug.js"></script>
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/immersed.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/fabu.css">
+	<title>发布</title>
+</head>
+<body>
+	<div class="box">
+		<form action="xianchang.html">
+		<div class="header">
+			<div class="img" onclick="window.history.back()">
+				<img src="img/back.png" alt="">
+			</div>
+			<div class="head_r">
+				<button>发布</button>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="main_t">
+				<textarea name="" id="" cols="30" rows="10" placeholder="总想发点什么..." required=""></textarea>
+			</div>
+		</div>
+
+		<div class="img-box full">
+			<section class=" img-section">
+				<div class="z_photo upimg-div clear" >
+						 <section class="z_file fl">
+							<img src="img/fabu.png" class="add-img">
+							<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp,image/gif,video/mp4" multiple />
+						 </section>
+				 </div>
+			 </section>
+		</div>
+		<aside class="mask works-mask">
+			<div class="mask-content">
+				<p class="del-p ">您确定要删除作品图片吗？</p>
+				<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+			</div>
+		</aside>
+
+		<div class="footer">
+			<div class="fimg">
+				<img src="img/coordinates_fill.png" alt="">
+			</div>
+			<span>获取当前位置</span>
+		</div>
+	</form>
+	</div>
+<script src="js/fabu.js"></script>
+<script>
+	$(function(){
+		$.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js',function(){
+			$('.footer span').click(function(event) {
+				$(this).html(remote_ip_info.country+remote_ip_info.province+remote_ip_info.city);
+			});
+		});
+	})
+</script>
+</body>
+</html>

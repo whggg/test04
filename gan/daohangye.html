@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/daohangye.css">
+	<link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+	<script src="../js/index.js"></script>
+	<script src="swiper/swiper-3.4.2.min.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="../js/flexible.debug.js"></script>
+	<script src="../js/flexible_css.debug.js"></script>
+	<script src="../js/immersed.js"></script>
+</head>
+<body>
+	<div class="daohangye">
+		<div class="header">
+			<ul>
+				<li onclick="window.location.href='../shezhi.html'"><img src="img/renxing.png" alt=""></li>
+				<li><h2>财礼无忧</h2></li>
+				<li class="btn btn-info btn-lg active" role="button" id="sel_city"><img src="img/dw.png" alt=""><span>银川</span></li>
+			</ul>
+		</div>
+		
+		<div class="swiper">
+			<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide"><img src="img/500006988.jpg" alt=""></div>
+			    <div class="swiper-slide"><img src="img/500006988.jpg" alt=""></div>
+			    <div class="swiper-slide"><img src="img/500006988.jpg" alt=""></div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+			</div>
+			
+		</div>
+		<script> 
+			var mySwiper = new Swiper('.swiper-container', {
+				pagination : '.swiper-pagination',
+				autoplay: 2000,//可选选项，自动滑动
+				loop : true,
+			})
+			
+			$(function(){
+				setTimeout(function(){
+                    $('.sxl .img1').animate({left:'84%'},1500);
+                    $('.sxr .img2').animate({right:'84%'},1500);
+                          
+                },10);  
+                 $('.mengban').fadeOut(2500);  
+                 $('.shuaxin').fadeOut(2500);  
+
+                 $('.btn .btn2').click(function(event) {
+                 	$(this).siblings('.suili').stop().show();
+                 	$('.mengban').stop().show();
+                 });
+
+                 $('.suili .sl_t span').click(function(event) {
+                 	$('.suili').stop().hide();
+                 	$('.mengban').stop().hide();
+                 });
+                  $('.mengban').click(function(event) {
+                 	$('.suili').stop().hide();
+                 	$('.mengban').stop().hide();
+                 });
+
+
+                 
+			   setInterval(function(){
+                    $('.jia img').animate({left:'0'},8000);
+                },5000);  
+
+
+                    
+                          
+
+			})
+		</script>
+		<script>
+					    // H5 plus事件处理
+			var as='pop-in';// 默认窗口动画
+			function plusReady(){
+				// 隐藏滚动条
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+				// Android处理返回键
+				plus.key.addEventListener('backbutton',function(){
+					('iOS'==plus.os.name)?plus.nativeUI.confirm('确认退出？', function(e){
+						if(e.index>0){
+							plus.runtime.quit();
+						}
+					}, null, ['取消','确定']):(confirm('确认退出？')&&plus.runtime.quit());
+				},false);
+				compatibleAdjust();
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener('plusready',plusReady,false);
+			}
+					
+		</script>
+		<div class="ziliao">
+			<h2>好好小吃</h2>
+			<div class="content">
+				<span>猜忌是婚姻生活的一颗毒瘤，聪明的夫妻懂得如何一起努力去巧妙化解，被猜忌的一方要做好自已，猜忌的一方要多些信任与释然，相互理解，相互信任，相互忠诚，减少误解，加强沟通，避免因为猜忌毁掉美好的感情和幸福的婚姻。</span>
+				<div class="re">
+					<div class="rel">
+						<div class="img1">
+							<img src="../img/man.png" alt="">
+						</div>
+					</div>
+					<div class="rer">
+						<div class="img2">
+							<img src="../img/nv.png" alt="">
+						</div>
+					</div>
+					<!-- <div class="money"><code>20</code>万</div> -->
+				</div>
+			</div>
+			<div class="btn">
+				<button class="btn1" onclick="window.location.href='../chakan.html'">查看资料</button><button class="btn2">帮他随礼</button>
+				<div class="suili">
+					<div class="sl_t">
+						<span>取消</span>
+					</div>
+					<div class="sl_c">
+						<form action="">
+							<span>请输入随礼金额：</span><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]/g,'')" required=""><br><br>
+							<span>请输入支付密码：</span><input type="password" required="">
+							<input type="submit" value="随礼" class="sub">
+						</form>
+					</div>
+
+				</div>
+			</div>
+		
+
+		<div class="ziliao">
+			<h2>张胜男</h2>
+			<div class="content">
+				<span>婚姻最重要的基础是相互的爱慕、欣赏、信赖和感情的交融，以及对责任和义务的共同承担。婚姻是双方在这个基础上携手同行的起点。进入婚姻的秩序意味着你不能逃离了，你要承担你必须承担的责任和义务。</span>
+				<div class="re">
+					<div class="rel">
+						<div class="img1">
+							<img src="../img/man.png" alt="">
+						</div>
+					</div>
+					<div class="rer">
+						<div class="img2">
+							<img src="../img/nv.png" alt="">
+						</div>
+					</div>
+					<!-- <div class="money"><code>20</code>万</div> -->
+				</div>
+			</div>
+			<div class="btn">
+				<button class="btn1" onclick="window.location.href='../chakan.html'">查看资料</button><button class="btn2">帮他随礼</button>
+				<div class="suili">
+					<div class="sl_t">
+						<span>取消</span>
+					</div>
+					<div class="sl_c">
+						<form action="">
+							<span>请输入随礼金额：</span><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]/g,'')" required=""><br><br>
+							<span>请输入支付密码：</span><input type="password" required="">
+							<input type="submit" value="随礼" class="sub">
+						</form>
+					</div>
+
+				</div>
+			</div>
+		
+		<div class="ziliao">
+			<h2>付伟市</h2>
+			<div class="content">
+				<span>我一旦结婚后肯定不会离婚，无论发生什么事情，我都会想法解决，让婚姻能够长久，哪怕是对方有了外遇，我也只会把事情摆在桌面上来想法解决，而不是冲动地离婚。</span>
+				<div class="re">
+					<div class="rel">
+						<div class="img1">
+							<img src="../img/man.png" alt="">
+						</div>
+					</div>
+					<div class="rer">
+						<div class="img2">
+							<img src="../img/nv.png" alt="">
+						</div>
+					</div>
+					<!-- <div class="money"><code>20</code>万</div> -->
+				</div>
+			</div>
+			<div class="btn">
+				<button class="btn1" onclick="window.location.href='../chakan.html'">查看资料</button><button class="btn2">帮他随礼</button>
+				<div class="suili">
+					<div class="sl_t">
+						<span>取消</span>
+					</div>
+					<div class="sl_c">
+						<form action="">
+							<span>请输入随礼金额：</span><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]/g,'')" required=""><br><br>
+							<span>请输入支付密码：</span><input type="password" required="">
+							<input type="submit" value="随礼" class="sub">
+						</form>
+					</div>
+
+				</div>
+			</div>
+		
+
+		<div class="ziliao">
+			<h2>李宏伟</h2>
+			<div class="content">
+				<span>不要把一时冲动当成爱吧，如果爱只是曾经拥有，那么，为什么会有那么多人期待天长地久？</span>
+				<div class="re">
+					<div class="rel">
+						<div class="img1">
+							<img src="../img/man.png" alt="">
+						</div>
+					</div>
+					<div class="rer">
+						<div class="img2">
+							<img src="../img/nv.png" alt="">
+						</div>
+					</div>
+					<!-- <div class="money"><code>20</code>万</div> -->
+				</div>
+			</div>
+			<div class="btn">
+				<button class="btn1" onclick="window.location.href='../chakan.html'">查看资料</button><button class="btn2">帮他随礼</button>
+				<div class="suili">
+					<div class="sl_t">
+						<span>取消</span>
+					</div>
+					<div class="sl_c">
+						<form action="">
+							<span>请输入随礼金额：</span><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]/g,'')" required=""><br><br>
+							<span>请输入支付密码：</span><input type="password" required="">
+							<input type="submit" value="随礼" class="sub">
+						</form>
+					</div>
+
+				</div>
+			</div>
+		
+		</div>
+		<div class="footer">
+			<div class="foots"><a href="#"><div class="imgs"><img src="../img/shouye.png" alt=""></div><span class="show">首页</span></a></div>
+			<div class="foots"><a href="../hudong.html"><div class="imgs"><img src="../img/faxian1.png" alt=""></div><div>发现</div></a></div>
+			<div class="foots"><a href="../xianchang.html"><div class="imgs"><img src="../img/luntan1.png" alt=""></div><div>论坛</div></a></div>
+			<div class="foots"><a href="../me.html"><div class="imgs"><img src="../img/wo1.png" alt=""></div><div>我</div></a></div>
+		</div>
+
+		<div class="jia">
+			<img src="../img/jiaru.png" alt="" onclick="window.location.href='shenqing.html'">
+		</div>
+		
+		<div class="shuaxin">
+			<div class="sxl">
+				<div class="img1 img">
+					<img src="../img/nan.gif" alt="">
+				</div>
+			</div>
+			<div class="sxr">
+				<div class="img2 img">
+					<img src="../img/nv (1).gif" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="mengban"></div>
+
+		<script src="js/picker.min.js"></script>
+<script src="js/city.js"></script>
+<script>
+var nameEl = document.getElementById('sel_city');
+var nameSp = nameEl.getElementsByTagName('span')[0];
+
+var first = []; /* 省，直辖市 */
+var second = []; /* 市 */
+var third = []; /* 镇 */
+
+var selectedIndex = [0, 0, 0]; /* 默认选中的地区 */
+
+var checked = [0, 0, 0]; /* 已选选项 */
+
+function creatList(obj, list){
+  obj.forEach(function(item, index, arr){
+  var temp = new Object();
+  temp.text = item.name;
+  temp.value = index;
+  list.push(temp);
+  })
+}
+
+creatList(city, first);
+
+if (city[selectedIndex[0]].hasOwnProperty('sub')) {
+  creatList(city[selectedIndex[0]].sub, second);
+} else {
+  second = [{text: '', value: 0}];
+}
+
+if (city[selectedIndex[0]].sub[selectedIndex[1]].hasOwnProperty('sub')) {
+  creatList(city[selectedIndex[0]].sub[selectedIndex[1]].sub, third);
+} else {
+  third = [{text: '', value: 0}];
+}
+
+var picker = new Picker({
+    data: [first, second, third],
+  selectedIndex: selectedIndex,
+    title: '地址选择'
+});
+
+picker.on('picker.select', function (selectedVal, selectedIndex) {
+  var text1 = first[selectedIndex[0]].text;
+  var text2 = second[selectedIndex[1]].text;
+  var text3 = third[selectedIndex[2]] ? third[selectedIndex[2]].text : '';
+
+    // nameEl.innerText = text1 + ' ' + text2 + ' ' + text3;
+    nameSp.innerText = text1;
+
+});
+
+picker.on('picker.change', function (index, selectedIndex) {
+  if (index === 0){
+    firstChange();
+  } else if (index === 1) {
+    secondChange();
+  }
+
+  function firstChange() {
+    second = [];
+    third = [];
+    checked[0] = selectedIndex;
+    var firstCity = city[selectedIndex];
+    if (firstCity.hasOwnProperty('sub')) {
+      creatList(firstCity.sub, second);
+
+      var secondCity = city[selectedIndex].sub[0]
+      if (secondCity.hasOwnProperty('sub')) {
+        creatList(secondCity.sub, third);
+      } else {
+        third = [{text: '', value: 0}];
+        checked[2] = 0;
+      }
+    } else {
+      second = [{text: '', value: 0}];
+      third = [{text: '', value: 0}];
+      checked[1] = 0;
+      checked[2] = 0;
+    }
+
+    picker.refillColumn(1, second);
+    picker.refillColumn(2, third);
+    picker.scrollColumn(1, 0)
+    picker.scrollColumn(2, 0)
+  }
+
+  function secondChange() {
+    third = [];
+    checked[1] = selectedIndex;
+    var first_index = checked[0];
+    if (city[first_index].sub[selectedIndex].hasOwnProperty('sub')) {
+      var secondCity = city[first_index].sub[selectedIndex];
+      creatList(secondCity.sub, third);
+      picker.refillColumn(2, third);
+      picker.scrollColumn(2, 0)
+    } else {
+      third = [{text: '', value: 0}];
+      checked[2] = 0;
+      picker.refillColumn(2, third);
+      picker.scrollColumn(2, 0)
+    }
+  }
+
+});
+
+picker.on('picker.valuechange', function (selectedVal, selectedIndex) {
+  console.log(selectedVal);
+  console.log(selectedIndex);
+});
+
+nameEl.addEventListener('click', function () {
+    picker.show();
+});
+</script>
+</body>
+</html>

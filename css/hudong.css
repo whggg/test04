@@ -1,0 +1,236 @@
+@charset 'utf-8';
+.box{
+	width: 100%;
+	max-width: 768px;
+	overflow: hidden;
+	height: auto;
+	margin:  0 auto;
+	/*background: url(../img/2.jpg)repeat;background-size: cover;*/
+}
+.header{
+	width: 100%;
+	height: 1.29rem;
+	background: #ff0000;
+	text-align: center;
+	line-height: 1.29rem;
+	color: #fff;
+	font-size: 0.57rem;
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.banner{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 0.37rem;
+	margin-top: 1.29rem;
+}
+.banner .ban_t{
+	color: #ff0000;
+	font-size: 0.74rem;
+}
+.banner .ban_c{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #ff0000;
+}
+.banner .ban_c div{
+	overflow: hidden;
+}
+.banner .ban_cl .img1{
+	width: 1.96rem;
+	height: 2.46rem;
+	display: inline-block;
+	background: url(../img/wnagguan-01.png)no-repeat center;
+	overflow: hidden;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 0.2rem;
+	position: relative;
+}
+.banner .ban_cc .img1{
+	width: 1.96rem;
+	height: 2.46rem;
+	display: inline-block;
+	background: url(../img/wnagguan-03.png)no-repeat center;
+	overflow: hidden;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 0.2rem;
+	position: relative;
+}
+.banner .ban_cr .img1{
+	width: 1.96rem;
+	height: 2.46rem;
+	display: inline-block;
+	background: url(../img/wnagguan-02.png)no-repeat center;
+	overflow: hidden;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 0.2rem;
+	position: relative;
+}
+.banner .ban_cl .img1 img{
+	position: absolute;
+	width: 71%;
+	height: 60%;
+	border-radius: 50%;
+	top: 62%;
+	left: 49%;
+	transform: translate(-50%,-50%);
+}
+.banner .ban_cc .img1 img{
+	position: absolute;
+	width: 68%;
+	height: 56%;
+	border-radius: 50%;
+	top: 58%;
+	left: 48%;
+	transform: translate(-50%,-50%);
+}
+.banner .ban_cr .img1 img{
+	position: absolute;
+	width: 70%;
+	height: 56%;
+	border-radius: 50%;
+	top: 63%;
+	left: 48%;
+	transform: translate(-50%,-50%);
+}
+.banner .ban_c h6{
+	font-size: 0.4rem;
+}
+.banner .ban_c span{
+	font-size: 0.29rem;
+	display: inline-block;
+	height: 1.11rem;
+	line-height: 1.11rem;
+	word-wrap: break-word;
+}
+.main{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 0.18rem;
+}
+.main .divs .img{
+	overflow: hidden;
+	height: 1.4rem;
+	width: 1.4rem;
+	background: #ff0000;
+	border-radius: 50%;
+	display: inline-block;
+}
+.main .divs .img img{
+	width: 100%;
+	height: 100%;
+}
+.main .divs{
+	color: #ff0000;
+	font-size: 0.37rem;
+	overflow: hidden;
+}
+.main .divs p{
+	padding:0.3rem 0 0.37rem 0;
+	word-wrap: break-word;
+}
+.contain{
+	width: 100%;
+	border-top: 1px solid #ff0000;
+	height: auto;
+	max-height: 2.5rem;
+	overflow: hidden;
+	box-sizing:border-box;
+	margin-bottom: 2.4rem;
+}
+.contain ul li{
+	font-size: 0.37rem;
+	padding:0 0.37rem;
+	color: #585858;
+	height: 0.74rem;
+	line-height: 0.74rem;
+	border-bottom: 1px solid #fc00ff;
+	overflow: hidden;
+}
+.contain ul li span{
+	float: right;
+}
+.btn{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 2.4rem;
+	padding:0.1rem 0;
+}
+.btn b{
+	display: inline-block;
+	font-size: 0.33rem;
+	padding:0 0.29rem;
+}
+.btn span{
+	display: inline-block;
+	background: #ff0000;
+	width: 0.18rem;
+	height: 0.18rem;
+	vertical-align: middle;
+}
+.btn span:nth-child(1),.btn span:nth-child(7){
+	width: 0.07rem;
+	height: 0.07rem;
+}
+.btn span:nth-child(2),.btn span:nth-child(6){
+	width: 0.12rem;
+	height: 0.12rem;
+}
+.footer{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #f9f9f9;
+}
+.footer .foots{
+	float: left;
+	width: 24.75%;
+	height: auto;
+	text-align: center;
+	padding:0.1rem 0;
+
+}
+.footer .foots .show{
+	color: red;
+}
+
+.footer div a{
+	width: 100%;
+	display: inline-block;
+	color: #000;
+	font-size: 0.37rem;
+	text-align: center;
+}
+.footer div a img{
+	border:0;
+}
+.jia img{
+	position: fixed;
+	right:0;
+	bottom: 7%;
+}

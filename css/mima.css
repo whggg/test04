@@ -1,0 +1,18 @@
+.nav ul li input{
+	height: 0.74rem;
+    border: #ccc 1px solid;
+}
+.nav ul li span{
+	display: inline-block;
+	margin-right: 0.5rem;
+	width: 35%;
+	text-align: justify;
+	text-align-last:justify; 
+}
+.footer .sub{
+	width: 100%;
+	height: 1.29rem;
+	background: #fff;
+	border: 0;
+	font-size: 0.37rem;
+} 

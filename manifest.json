@@ -1,0 +1,638 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H53BA6094",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "财礼无忧",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "denglu02.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "Messaging": {
+            "description": "访问通讯能力"
+        },
+        
+        "Speech": {
+            "description": "管理语音识别插件"
+        }
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,"delay":"1000"
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
+			},
+			"orientation": ["portrait-primary", "portrait-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					 /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
+						/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"app@2x":"unpackage/res/icons/120x120.png","app@3x":"unpackage/res/icons/180x180.png","settings@3x":"unpackage/res/icons/87x87.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","spotlight@3x":"unpackage/res/icons/120x120.png","notification@3x":"unpackage/res/icons/60x60.png","notification@2x":"unpackage/res/icons/40x40.png"
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						 /*iPad iOS7程序图标，分辨率：76x76*/
+						 /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app":"unpackage/res/icons/76x76.png","app@2x":"unpackage/res/icons/152x152.png","settings":"unpackage/res/icons/29x29.png","proapp@2x":"unpackage/res/icons/167x167.png","spotlight":"unpackage/res/icons/40x40.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","notification":"unpackage/res/icons/20x20.png","notification@2x":"unpackage/res/icons/40x40.png"
+					},"appstore":"unpackage/res/icons/1024x1024.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "E:/彩礼无忧/启动页480.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "E:/彩礼无忧/启动页720.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "E:/彩礼无忧/启动页1080.png"
+				}
+			}
+		},"ads":{"rp":false,"splash":false,"push":false,"spot":false},"adid":""
+	},
+	"dependencies":{
+		"pages": {
+			"zhanghao.html": {
+				"href": "zhanghao.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/zhanghao.css",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/immersed.js",
+					"img/go.png",
+					"img/back1.png",
+					"img/dui.png"
+				],
+				"refer": [
+					"denglu02.html",
+					"gan/daohangye.html"
+				],
+				"priority": 2
+			},
+			"mima.html": {
+				"href": "mima.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/shezhi.css",
+					"css/mima.css",
+					"js/index.js",
+					"js/immersed.js",
+					"img/back1.png"
+				],
+				"refer": [
+					"shezhi.html"
+				],
+				"priority": 3
+			},
+			"zhifumima.html": {
+				"href": "zhifumima.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/shezhi.css",
+					"css/mima.css",
+					"js/index.js",
+					"js/immersed.js",
+					"img/back1.png"
+				],
+				"refer": [
+					"shezhi.html"
+				],
+				"priority": 4
+			},
+			"shezhi.html": {
+				"href": "shezhi.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/shezhi.css",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/immersed.js",
+					"img/back1.png",
+					"img/go.png"
+				],
+				"refer": [
+					"gan/daohangye.html",
+					"denglu02.html",
+					"zhanghao.html",
+					"mima.html",
+					"zhifumima.html"
+				],
+				"priority": 0
+			},
+			"chakan.html": {
+				"href": "chakan.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/chakan.css",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/immersed.js",
+					"img/back.png",
+					"img/zhnaghao.png",
+					"img/ziliao.png",
+					"img/phone.png",
+					"img/xiangce.png"
+				],
+				"priority": 1
+			},
+			"gan/shenqing.html": {
+				"href": "gan/shenqing.html",
+				"resources": [
+					"gan/styles/reset.css",
+					"gan/css/shenqing.css",
+					"gan/css/common.css",
+					"gan/css/index.css",
+					"gan/img/loading.gif",
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/index.js",
+					"gan/js/jquery-2.1.1.min.js",
+					"js/immersed.js",
+					"js/imgUp.js",
+					"gan/img/a7.png",
+					"img/back.png",
+					"gan/img/1.png",
+					"gan/img/1.jpg"
+				],
+				"refer": [
+					"gan/daohangye.html"
+				],
+				"priority": 2
+			},
+			"xianchang.html": {
+				"href": "xianchang.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"css/index.css",
+					"css/xianchang.css",
+					"js/immersed.js",
+					"js/xiangchang.js",
+					"icon.png",
+					"css/photoswipe.css",
+					"css/default-skin.css",
+					"img/default-skin.png",
+					"img/default-skin.svg",
+					"js/photoswipe.js",
+					"js/photoswipe-ui-default.min.js",
+					"img/back.png",
+					"img/map.png",
+					"img/duihua.png",
+					"img/xin.png",
+					"img/pinglun.png",
+					"img/zan.png"
+				],
+				"priority": 6
+			},
+			"xiaoxi.html": {
+				"href": "xiaoxi.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/xiaoxi.css",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"img/back.png"
+				],
+				"priority": 8
+			},
+			"me.html": {
+				"href": "me.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/immersed.js",
+					"css/index.css",
+					"css/me.css",
+					"img/jiaru.png",
+					"img/xinxi.png",
+					"img/shouye1.png",
+					"img/faxian1.png",
+					"img/luntan1.png",
+					"img/wo.png"
+				],
+				"refer": [
+					"gan/shenqing.html",
+					"xiaoxi.html",
+					"me.html",
+					"gan/daohangye.html",
+					"hudong.html",
+					"xianchang.html"
+				],
+				"priority": 7
+			},
+			"hudong.html": {
+				"href": "hudong.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/immersed.js",
+					"css/index.css",
+					"css/hudong.css",
+					"img/wnagguan-01.png",
+					"img/wnagguan-03.png",
+					"img/wnagguan-02.png",
+					"js/jquery.kxbdMarquee.js",
+					"img/jiaru.png",
+					"img/top1.png",
+					"img/top2.png",
+					"img/top3.png",
+					"img/shouye1.png",
+					"img/faxian.png",
+					"img/luntan1.png",
+					"img/wo1.png"
+				],
+				"refer": [
+					"gan/shenqing.html",
+					"chakan.html",
+					"gan/daohangye.html",
+					"xianchang.html",
+					"me.html"
+				],
+				"priority": 3
+			},
+			"gan/daohangye.html": {
+				"href": "gan/daohangye.html",
+				"resources": [
+					"gan/styles/reset.css",
+					"gan/styles/daohangye.css",
+					"gan/swiper/swiper-3.4.2.min.css",
+					"js/index.js",
+					"gan/swiper/swiper-3.4.2.min.js",
+					"gan/js/jquery-2.1.1.min.js",
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/immersed.js",
+					"gan/img/renxing.png",
+					"gan/img/dw.png",
+					"gan/js/picker.min.js",
+					"gan/js/city.js",
+					"gan/img/500006988.jpg",
+					"img/jiaru.png",
+					"img/man.png",
+					"img/nv.png",
+					"img/nan.gif",
+					"img/shouye.png",
+					"img/faxian1.png",
+					"img/luntan1.png",
+					"img/wo1.png"
+				],
+				"refer": [
+					"shezhi.html",
+					"chakan.html",
+					"gan/shenqing.html",
+					"hudong.html",
+					"xianchang.html",
+					"me.html"
+				],
+				"priority": 0
+			},
+			"qqsubmit.html": {
+				"href": "qqsubmit.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/qqsubmit.css",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/immersed.js",
+					"img/logo.png",
+					"img/back.png",
+					"img/bottom.png"
+				],
+				"refer": [
+					"gan/daohangye.html"
+				],
+				"priority": 1
+			},
+			"wxsubmit.html": {
+				"href": "wxsubmit.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/qqsubmit.css",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/immersed.js",
+					"img/logo.png",
+					"img/back.png",
+					"img/bottom.png"
+				],
+				"refer": [
+					"gan/daohangye.html"
+				],
+				"priority": 2
+			},
+			"forgetPwd4.html": {
+				"href": "forgetPwd4.html",
+				"resources": [
+					"css/css.css",
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/index.js",
+					"js/immersed.js"
+				],
+				"refer": [
+					"denglu02.html"
+				],
+				"priority": 3
+			},
+			"forgetPwd3.html": {
+				"href": "forgetPwd3.html",
+				"resources": [
+					"css/css.css",
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/index.js",
+					"js/immersed.js"
+				],
+				"refer": [
+					"forgetPwd4.html"
+				],
+				"priority": 3
+			},
+			"forgetPwd2.html": {
+				"href": "forgetPwd2.html",
+				"resources": [
+					"css/css.css",
+					"js/jquery-1.12.2.min.js",
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/index.js",
+					"js/immersed.js"
+				],
+				"refer": [
+					"forgetPwd3.html"
+				],
+				"priority": 3
+			},
+			"demo.html": {
+				"href": "demo.html",
+				"resources": [
+					"css/css.css",
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"js/index.js",
+					"js/immersed.js",
+					"img/yzm.gif"
+				],
+				"refer": [
+					"forgetPwd2.html"
+				],
+				"priority": 3
+			},
+			"denglu02.html": {
+				"href": "denglu02.html",
+				"resources": [
+					"js/flexible.debug.js",
+					"js/flexible_css.debug.js",
+					"css/index.css",
+					"css/denglu02.css",
+					"img/bj.png",
+					"js/jquery-1.12.2.min.js",
+					"js/index.js",
+					"js/denglu02.js",
+					"js/immersed.js",
+					"img/logo.png",
+					"img/up.png",
+					"img/qq.png",
+					"img/weixin.png",
+					"img/weibo.png",
+					"img/dui.png"
+				],
+				"refer": [
+					"gan/daohangye.html",
+					"qqsubmit.html",
+					"wxsubmit.html",
+					"demo.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"plus/webview_pulltorefresh.html",
+				"plus/barcode.html",
+				"plus/runtime.html",
+				"plus/xhr.html",
+				"audio/friendship.mp3",
+				"plus/share.html",
+				"img/waiting.png",
+				"gan/css/styles.css",
+				"plus/njs.html",
+				"img/orientationb.png",
+				"img/shake/3.jpg",
+				"js/common.js",
+				"img/add.png",
+				"img/orientationa.png",
+				"img/pull_arrow.png",
+				"plus/webview_embed.html",
+				"plus/nativeui.html",
+				"plus/nativeui_waiting.html",
+				"js/mui.js",
+				"plus/file.html",
+				"img/pull_fresh.png",
+				"img/shake/2.jpg",
+				"plus/push.html",
+				"img/shake/1.jpg",
+				"img/shakedown.png",
+				"audio/shake.wav",
+				"fonts/mui.ttf",
+				"plus/audio.html",
+				"plus/uploader.html",
+				"plus/storage.html",
+				"plus/webview_animation.html",
+				"plus/accelerometer.html",
+				"img/orientationbg.png",
+				"img/qr.png",
+				"img/nv (1).gif",
+				"js/update.js",
+				"gan/img/logo.png",
+				"plus/navigator.html",
+				"plus/barcode_scan2.html",
+				"img/more.png",
+				"img/shake/4.jpg",
+				"plus/speech.html",
+				"sa@2x.png",
+				"img/5.jpg",
+				"plus/runtime_launch.html",
+				"plus/webview_pullrefresh.html",
+				"plus/nativeobj.html",
+				"css/common.css",
+				"js/mui.min.js",
+				"plus/camera.html",
+				"plus/njs_android_shortcut.html",
+				"img/fup.png",
+				"img/luntan.png",
+				"img/ffile.png",
+				"plus/orientation_compass.html",
+				"gan/styles/regist.css",
+				"img/fdir.png",
+				"js/checkbix.js",
+				"plus/device.html",
+				"plus/orientation.html",
+				"img/shakeup.png",
+				"img/praise.png",
+				"img/sanjiaoxing.png",
+				"img/fdisk.png",
+				"plus/gallery.html",
+				"plus/webview.html",
+				"plus/geolocation.html",
+				"gan/fonts/icomoon.woff",
+				"plus/webview_pullrefresh_custom.html",
+				"plus/webview_float.html",
+				"plus/webview_new.html",
+				"sa.png",
+				"js/shortcut.js",
+				"img/ui.png",
+				"plus/camera_image.html",
+				"plus/events.html",
+				"plus/uploader_ret.html",
+				"plus/payment.html",
+				"plus/njs_ios_gamecenter.html",
+				"plus/oauth.html",
+				"img/orientationc.png",
+				"plus/webview_pullhead_custom.html",
+				"plus/downloader.html",
+				"img/close.png",
+				"img/arecord.png",
+				"gan/fonts/icomoon.eot",
+				"plus/zip.html",
+				"plus/statistic.html",
+				"plus/payment_iap.html",
+				"plus/webview_mask_side.html",
+				"css/checkbix.css",
+				"plus/njs_efficient.html",
+				"img/bg3.jpg",
+				"img/orientationl.png",
+				"sa@3x.png",
+				"img/helloh5.jpg",
+				"plus/nativeobj_animation.html",
+				"img/jia.png",
+				"css/denglu.css",
+				"js/demo.js",
+				"gan/fonts/icomoon.svg",
+				"plus/maps_map_sub.html",
+				"js/update.json",
+				"plus/message.html",
+				"gan/swiper/idangerous.swiper2.7.6.min.js",
+				"plus/maps.html",
+				"plus/proximity.html",
+				"gan/js/modernizr.js",
+				"gan/js/stopExecutionOnTimeout.js",
+				"img/astop.png",
+				"logo.png",
+				"plus/barcode_scan.html",
+				"gan/css/normalize.css",
+				"plus/webview_mask.html",
+				"img/h5p.jpg",
+				"gan/fonts/icomoon.ttf",
+				"plus/webview_pullhead.html",
+				"gan/swiper/idangerous.swiper2.7.6.css",
+				"plus/maps_map.html",
+				"plus/doc.html",
+				"img/barcode.png",
+				"plus/accelerometer_shake.html",
+				"img/xin.gif",
+				"img/bg2.jpg",
+				"plus/orientation_level.html",
+				"plus/camera_video.html",
+				"plus/navigator_status.html"
+			]
+		}
+	}
+}

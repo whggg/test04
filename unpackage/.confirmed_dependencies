@@ -1,0 +1,374 @@
+{
+  "zhanghao.html": {
+    "href": "zhanghao.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/zhanghao.css",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/immersed.js",
+      "img/go.png",
+      "img/back1.png",
+      "img/dui.png"
+    ],
+    "refer": [
+      "denglu02.html",
+      "gan/daohangye.html"
+    ],
+    "priority": 0
+  },
+  "mima.html": {
+    "href": "mima.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/shezhi.css",
+      "css/mima.css",
+      "js/index.js",
+      "js/immersed.js",
+      "img/back1.png"
+    ],
+    "refer": [
+      "shezhi.html"
+    ],
+    "priority": 0
+  },
+  "zhifumima.html": {
+    "href": "zhifumima.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/shezhi.css",
+      "css/mima.css",
+      "js/index.js",
+      "js/immersed.js",
+      "img/back1.png"
+    ],
+    "refer": [
+      "shezhi.html"
+    ],
+    "priority": 0
+  },
+  "shezhi.html": {
+    "href": "shezhi.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/shezhi.css",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/immersed.js",
+      "img/back1.png",
+      "img/go.png"
+    ],
+    "refer": [
+      "gan/daohangye.html",
+      "denglu02.html",
+      "zhanghao.html",
+      "mima.html",
+      "zhifumima.html"
+    ],
+    "priority": 0
+  },
+  "chakan.html": {
+    "href": "chakan.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/chakan.css",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/immersed.js",
+      "img/back.png",
+      "img/zhnaghao.png",
+      "img/ziliao.png",
+      "img/phone.png",
+      "img/xiangce.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "gan/shenqing.html": {
+    "href": "gan/shenqing.html",
+    "resources": [
+      "gan/styles/reset.css",
+      "gan/css/shenqing.css",
+      "gan/css/common.css",
+      "gan/css/index.css",
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/index.js",
+      "gan/js/jquery-2.1.1.min.js",
+      "js/immersed.js",
+      "js/imgUp.js",
+      "gan/img/a7.png",
+      "img/back.png",
+      "gan/img/1.png",
+      "gan/img/1.jpg"
+    ],
+    "refer": [
+      "gan/daohangye.html"
+    ],
+    "priority": 0
+  },
+  "xianchang.html": {
+    "href": "xianchang.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "css/index.css",
+      "css/xianchang.css",
+      "js/immersed.js",
+      "js/xiangchang.js",
+      "icon.png",
+      "css/photoswipe.css",
+      "css/default-skin.css",
+      "js/photoswipe.js",
+      "js/photoswipe-ui-default.min.js",
+      "img/back.png",
+      "img/map.png",
+      "img/duihua.png",
+      "img/xin.png",
+      "img/pinglun.png",
+      "img/zan.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "xiaoxi.html": {
+    "href": "xiaoxi.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/xiaoxi.css",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "img/back.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "me.html": {
+    "href": "me.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/immersed.js",
+      "css/index.css",
+      "css/me.css",
+      "img/jiaru.png",
+      "img/xinxi.png",
+      "img/shouye1.png",
+      "img/faxian1.png",
+      "img/luntan1.png",
+      "img/wo.png"
+    ],
+    "refer": [
+      "gan/shenqing.html",
+      "xiaoxi.html",
+      "me.html",
+      "gan/daohangye.html",
+      "hudong.html",
+      "xianchang.html"
+    ],
+    "priority": 0
+  },
+  "hudong.html": {
+    "href": "hudong.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/immersed.js",
+      "css/index.css",
+      "css/hudong.css",
+      "js/jquery.kxbdMarquee.js",
+      "img/jiaru.png",
+      "img/top1.png",
+      "img/top2.png",
+      "img/top3.png",
+      "img/shouye1.png",
+      "img/faxian.png",
+      "img/luntan1.png",
+      "img/wo1.png"
+    ],
+    "refer": [
+      "gan/shenqing.html",
+      "chakan.html",
+      "gan/daohangye.html",
+      "xianchang.html",
+      "me.html"
+    ],
+    "priority": 0
+  },
+  "gan/daohangye.html": {
+    "href": "gan/daohangye.html",
+    "resources": [
+      "gan/styles/reset.css",
+      "gan/styles/daohangye.css",
+      "gan/swiper/swiper-3.4.2.min.css",
+      "js/index.js",
+      "gan/swiper/swiper-3.4.2.min.js",
+      "gan/js/jquery-2.1.1.min.js",
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/immersed.js",
+      "gan/img/renxing.png",
+      "gan/img/dw.png",
+      "gan/js/picker.min.js",
+      "gan/js/city.js",
+      "gan/img/500006988.jpg",
+      "img/jiaru.png",
+      "img/man.png",
+      "img/nv.png",
+      "img/nan.gif",
+      "img/shouye.png",
+      "img/faxian1.png",
+      "img/luntan1.png",
+      "img/wo1.png"
+    ],
+    "refer": [
+      "shezhi.html",
+      "chakan.html",
+      "gan/shenqing.html",
+      "hudong.html",
+      "xianchang.html",
+      "me.html"
+    ],
+    "priority": 0
+  },
+  "qqsubmit.html": {
+    "href": "qqsubmit.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/qqsubmit.css",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/immersed.js",
+      "img/logo.png",
+      "img/back.png",
+      "img/bottom.png"
+    ],
+    "refer": [
+      "gan/daohangye.html"
+    ],
+    "priority": 0
+  },
+  "wxsubmit.html": {
+    "href": "wxsubmit.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/qqsubmit.css",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/immersed.js",
+      "img/logo.png",
+      "img/back.png",
+      "img/bottom.png"
+    ],
+    "refer": [
+      "gan/daohangye.html"
+    ],
+    "priority": 0
+  },
+  "forgetPwd4.html": {
+    "href": "forgetPwd4.html",
+    "resources": [
+      "css/css.css",
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/index.js",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "denglu02.html"
+    ],
+    "priority": 0
+  },
+  "forgetPwd3.html": {
+    "href": "forgetPwd3.html",
+    "resources": [
+      "css/css.css",
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/index.js",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "forgetPwd4.html"
+    ],
+    "priority": 0
+  },
+  "forgetPwd2.html": {
+    "href": "forgetPwd2.html",
+    "resources": [
+      "css/css.css",
+      "js/jquery-1.12.2.min.js",
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/index.js",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "forgetPwd3.html"
+    ],
+    "priority": 0
+  },
+  "demo.html": {
+    "href": "demo.html",
+    "resources": [
+      "css/css.css",
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "js/index.js",
+      "js/immersed.js",
+      "img/yzm.gif"
+    ],
+    "refer": [
+      "forgetPwd2.html"
+    ],
+    "priority": 0
+  },
+  "denglu02.html": {
+    "href": "denglu02.html",
+    "resources": [
+      "js/flexible.debug.js",
+      "js/flexible_css.debug.js",
+      "css/index.css",
+      "css/denglu02.css",
+      "js/jquery-1.12.2.min.js",
+      "js/index.js",
+      "js/denglu02.js",
+      "js/immersed.js",
+      "img/logo.png",
+      "img/up.png",
+      "img/qq.png",
+      "img/weixin.png",
+      "img/weibo.png",
+      "img/dui.png"
+    ],
+    "refer": [
+      "gan/daohangye.html",
+      "qqsubmit.html",
+      "wxsubmit.html",
+      "demo.html"
+    ],
+    "priority": 0
+  }
+}

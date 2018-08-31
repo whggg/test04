@@ -1,0 +1,242 @@
+@charset 'utf-8';
+/*body{background: url(../img/2.jpg);}*/
+.box{
+	width: 100%;
+	max-width: 768px;
+	overflow: hidden;
+	height: auto;
+	margin:  0 auto;
+}
+.header{
+	width: 100%;
+	height: 1.29rem;
+	background: #ff0000;
+	text-align: center;
+	line-height: 1.29rem;
+	color: #fff;
+	font-size: 0.57rem;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	/*background: url(../img/ )center;*/
+	/*background-size: cover;*/
+}
+.banner{
+	width: 100%;
+	height: 5rem;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	margin-top: 1.29rem;
+}
+.banner .banner_l{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	background: #ff0000;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+}
+.banner .banner_l img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+
+}
+.banner .banner_c {
+	display: inline-block;
+	text-align: justify;
+}
+.banner .banner_c h2{
+	font-size: 0.51rem;
+	color: #b5b5b6;
+	margin-bottom: 0.2rem;
+}
+.banner .banner_c h4{
+	font-size: 0.7rem;
+	color: #ff0000;
+	/*margin-bottom: 1rem;*/
+	margin-bottom: 0.2rem;
+
+	display: inline-block;
+}
+.banner .banner_c h4 strong{
+	font-size: 0.5rem;
+}
+.banner .banner_c p{
+	font-size: 0.51rem;
+	color: #b5b5b6;
+	/*text-align: center;*/
+	/*margin-left: 1.25rem;*/
+}
+.banner .banner_c .img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.banner .banner_c .img img{
+	display: inline-block;
+}
+.banner_r{
+	position: absolute;
+    top: 0.15rem;
+    right: 0.25rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    overflow: hidden;
+}
+.banner_r img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.banner_r i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: blue;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.35rem;
+	right: 0.3rem;
+}
+.nav{
+	width: 100%;
+	height: auto;
+	margin:  0 auto;
+	overflow: hidden;
+}
+.nav .nav_t{
+	font-size: 0.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav .nav_t div{
+	width: 49.8%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #fff;
+	text-align: center;
+	background: #ff0000;
+	overflow: hidden;
+}
+.nav .nav_t .nav_tl b{
+	font-size: 0.49rem;
+}
+.nav .nav_c{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.nav .nav_c div{
+	width: 100%;
+	border-bottom: 1px solid #000;
+	color: #ff0000;
+	font-size: 0.49rem;
+	text-align: center;
+	padding:0.2rem 0;
+}
+.nav .nav_c div span{
+	display: inline-block;
+	text-align-last:justify;
+	/*text-align: justify;*/
+}
+.nav .nav_c .nav_c3{
+	display: none;
+}
+.nav .nav_c .nav_c3 input{
+    border-radius: 5px;
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border: none;
+    background: #f00;
+    color: #fff;
+    font-size: 0.47rem;
+    line-height: 40px;
+    text-align: center;
+}
+.nav .nav_c div input{
+	border:0;
+	color: #ff0000;
+	background: 0;
+}
+.main{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	margin: 0.53rem 0;
+	margin-bottom: 2.2rem;
+}
+.main ul li{
+	width: 33%;
+	height: 2.13rem;
+	line-height: 2.13rem;
+	background: #ff0000;
+	display: inline-block;
+	float: left;
+	margin-bottom: 0.5%;
+}
+.main ul li:last-child{
+	width: 66.3%;
+	margin-left: 1px;
+}
+.main ul li:nth-child(2){
+	margin:0 1px;
+}
+.main ul{
+	width: 100%;
+	box-sizing:border-box;
+	padding:0 0.53rem;
+}
+.main ul li a{
+	color: #fff;
+	display: inline-block;
+	font-size: 0.57rem;
+	width: 100%;
+}
+.footer{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #f9f9f9;
+}
+.footer .foots{
+	float: left;
+	width: 24.75%;
+	height: auto;
+	text-align: center;
+	padding:0.1rem 0;
+
+}
+.footer .foots .show{
+	color: red;
+}
+
+.footer div a{
+	width: 100%;
+	display: inline-block;
+	color: #000;
+	font-size: 0.37rem;
+	text-align: center;
+}
+.footer div a img{
+	border:0;
+}
+.jia img{
+	position: fixed;
+	right:0;
+	bottom: 7%;
+}

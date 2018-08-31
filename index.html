@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true"/>
+	<meta name="MobileOptimized" content="320"/>
+	<script src="js/flexible.debug.js"></script>
+	<script src="js/flexible_css.debug.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/denglu02.css">
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/denglu02.js"></script>
+
+	<title>登录/注册</title>
+</head>
+<body>
+	<div class="box">
+		<div class="header">
+			<div class="header_t">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="header_c">
+				<div class="denglu tas">
+					<h4>登录</h4>
+					<div class="imgs imgshow">
+						<img src="img/up.png" alt="">
+					</div>
+				</div>
+				<div class="zhuce tas">
+					<h4>注册</h4>
+					<div class="imgs">
+						<img src="img/up.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab">
+			<div class="tab1 tabs">
+				<div class="main">
+					<form action="gan/daohangye.html">
+						<ul>
+							<li><input type="text" placeholder="请输入账号" required="required"></li>
+							<li><input type="password" placeholder="请输入密码" required=""></li>
+						</ul>
+						<input type="submit" value="登录" class="submit1">
+					</form>
+						<span class="submit">登录</span>
+						
+						<div class="xieyi">
+							<!-- <div class="xy_l">
+								<span>用户协议</span>
+								<b><img src="img/dui.png" alt=""></b>
+							</div> -->
+							<div class="xy_r">
+								<a href="wangjimima.html">忘记密码</a>
+							</div>
+						</div>
+				</div>
+
+				<div class="footer">
+					<span>其他账号登录</span>
+					<div class="foot_c">
+						<div class="imgs" onclick="window.location.href='qqsubmit.html'"><img src="img/qq.png" alt=""></div>
+						<div class="imgs" onclick="window.location.href='wxsubmit.html'"><img src="img/weixin.png" alt=""></div>
+						<div class="imgs"><img src="img/weibo.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab2 tabs">
+				<div class="main">
+					<form action="#tab1">
+						<ul>
+							<li><input type="text" placeholder="请设置用户名" class="login1" required></li>
+							<li><input type="password" placeholder="请输入密码" class="pwd1" required></li>
+							<li><input type="password" placeholder="请再次输入密码" class="pwd2" required></li>
+							<li><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]/g,'')" placeholder="请输入手机号码" maxlength="11" class="phone" required></li>
+							<li><input type="text" placeholder="请输入验证码" maxlength="4" class="yanzheng" required><div class="yanzhengma"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2113584262,999082976&fm=27&gp=0.jpg" alt=""></div></li>
+						</ul>
+						<input type="submit" value="注册" class="submit1">
+					</form>
+					<span class="submit">注册</span>
+					<div class="xy_l">
+						<span>用户协议</span>
+						<b><img src="img/dui.png" alt=""></b>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="cont_top">
+				<h2>服务协议及隐私权政策</h2>
+			</div>
+			<div class="cont_con">
+				<p>亲爱的用户，支付宝依照相关法规要求进行实名制管理、履行反洗钱职责和采取风险防范措施。为了您可以正常使用支付宝服务，您的身份信息、联系方式、交易信息需要被依法收集并使用。</p>
+				<p>支付宝将严格保护您的个人信息，确保信息安全，具体详见《支付宝隐私权政策》。</p>
+				<p>您在点击同意下列协议前，请您务必审慎阅读，并充分理解协议条款内容。</p>
+				<div class="cons">
+					<a href="">《支付宝服务协议》</a>
+					<a href="">《支付宝隐私权政策》</a>
+				</div>
+			</div>
+			<div class="cont_bot">
+				<button class="yes">同意</button>
+				<button class="no">不同意</button>
+			</div>
+		</div>
+
+		<div class="zhezhao"></div>
+	</div>
+	<script>
+
+					    // H5 plus事件处理
+			var as='pop-in';// 默认窗口动画
+			function plusReady(){
+				// 隐藏滚动条
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+				// Android处理返回键
+				plus.key.addEventListener('backbutton',function(){
+					('iOS'==plus.os.name)?plus.nativeUI.confirm('确认退出？', function(e){
+						if(e.index>0){
+							plus.runtime.quit();
+						}
+					}, null, ['取消','确定']):(confirm('确认退出？')&&plus.runtime.quit());
+				},false);
+				compatibleAdjust();
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener('plusready',plusReady,false);
+			}
+					
+		</script>
+	<script type="text/javascript" src="js/immersed.js" ></script>
+		
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>申请信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="css/shenqing.css">
+	<link href="css/common.css" type="text/css" rel="stylesheet">
+	<link href="css/index.css" type="text/css" rel="stylesheet">
+	<script src="../js/flexible.debug.js"></script>
+	<script src="../js/flexible_css.debug.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="../js/immersed.js"></script>
+	<script src="../js/imgUp.js"></script>
+</head>
+<body>
+	<div class="shenqing">
+		<form action="daohangye.html">
+		<div class="top">
+			<div class="img" onclick="window.history.back()">
+				<img src="../img/back.png" alt="">
+			</div>
+			<h2>申请信息</h2>
+		</div>
+		<div class="tab">
+				<ul>
+					<li>
+						<span>姓名：</span><input type="text" placeholder="请输入您的姓名" required="">
+					</li>
+					<li>
+						<span class="middle">性别：</span>
+						<div class="inp1"><input type="radio" value="1" name="sex" class="middle" style="width: 13px;" required="">男</div>
+						<div class="inp2"><input type="radio" value="2" name="sex" class="middle" style="width: 13px;">女</div>
+					</li>
+					<li>
+						<span>身份证：</span><input onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" onpaste="value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" oncontextmenu = "value=value.replace(/[^\a-\z\A-\Z0-9]/g,'')" placeholder="请输入您的身份证号" maxlength="18" required="">
+					</li>
+					<li>
+						<span>手机号：</span><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]/g,'')" placeholder="请输入您的手机号" class="phone" maxlength="11" required="">
+					</li>
+					<li>
+						<span>验证码：</span><input type="text" style="width: 24%;" maxlength="4" required=""><div class="img"><img src="img/1.jpg" alt=""></div>
+					</li>
+					<li>
+						<span>申请额度：</span>
+						<select name="" id="">
+							<option value="9.9万">9.9万</option>
+							<option value="19.8万">19.8万</option>
+							<option value="29.7万">29.7万</option>
+
+						</select>
+					</li>
+				</ul>
+				<textarea name="" id="" cols="30" rows="10" placeholder="请输入您的描述" style="margin-top: 10px;background: 0;width: 98%;font-size:16px;box-sizing:border-box;color: #000;" required=""></textarea>
+				
+			<div class="imgy">
+			</div>
+		</div>
+	
+		<div class="footer">
+				<div class="img-box full">
+					<section class=" img-section">
+						<div class="z_photo upimg-div clear" >
+							<!-- <section class="z_file fl">
+								<img src="img/1.png" class="add-img">
+								<input type="file" name="file" id="file" class="file inpu" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+							</section> -->
+						 </div>
+					 </section>
+				</div>
+				<aside class="mask works-mask">
+					<div class="mask-content">
+						<p class="del-p ">您确定要删除作品图片吗？</p>
+						<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+					</div>
+				</aside>
+			<div class="btn">
+				<section class="z_file fl">
+					<img src="img/1.png" class="add-img">
+					<input type="file" name="file" id="file" class="file inpu" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+				</section>
+				<input type="submit" class="btn1 btns" value="提交申请">
+				<input type="reset" class="btns" value="重置">
+			</div>
+			
+		</div>
+		</form>
+
+	</div>
+	<script>
+	    document.addEventListener("plusready", function() {
+	        // 注册返回按键事件
+	        plus.key.addEventListener('backbutton', function() {
+	            // 事件处理
+	            window.history.back();
+	        }, false);
+	    });
+	    function appendByGallery(){
+	plus.gallery.pick(function(p){
+        appendFile(p);
+    });
+}
+	</script>
+</body>
+</html>

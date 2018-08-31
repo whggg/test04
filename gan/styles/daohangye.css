@@ -1,0 +1,310 @@
+@charset "utf-8";
+.daohangye{
+	width: 100%;
+	height: auto;
+	/*background: url(../../img/4.jpg)repeat;background-size: cover;*/
+	position: relative;
+}
+.header{
+	width: 100%;
+	height: 1.29rem;
+	background: #f00;
+	line-height: 1.29rem;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+/*	background: url(../../img/2.jpg)no-repeat;
+	background-size: cover;*/
+}
+.header h2{
+	font-size: 0.57rem;
+	display: inline-block;
+}
+.header ul{
+	display: flex;
+	justify-content: space-between;
+	width: 94%;
+	margin: 0 auto;
+}
+.header li{
+	font-size: 18px;
+	color: #fff;
+}
+.header li img{
+	vertical-align: middle;
+}
+
+.footer{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #f9f9f9;
+}
+.footer .foots{
+	float: left;
+	width: 24.75%;
+	height: auto;
+	text-align: center;
+	padding:0.1rem 0;
+
+}
+.footer .foots .show{
+	color: red;
+}
+
+.footer div a{
+	width: 100%;
+	display: inline-block;
+	color: #000;
+	font-size: 0.37rem;
+	text-align: center;
+}
+.footer div a img{
+	border:0;
+}
+.jia img{
+	position: fixed;
+	right:0;
+	bottom: 7%;
+}
+
+
+
+@media screen and (min-width:1024px){
+    .footer .yuan{
+		position: absolute;
+		top: -26px;
+		left: 46.5%;
+	}
+}
+
+
+.swiper{
+	margin-top: 1.7rem;
+	height: 35%;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.swiper-slide img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.ziliao{
+	width: 100%;
+	padding-bottom: 0.5rem;
+
+}
+.ziliao h2{
+	width: 100%;
+	height: 34px;
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 34px;
+}
+
+.content{
+	width: 100%;
+	height: auto;
+	border-top: 2px solid #f00;
+	position: relative;
+	/*margin-bottom: 0.625rem;
+	border-bottom: 1px solid #f00;*/
+
+}
+.content span{
+	text-align: justify;
+	box-sizing:border-box;
+	padding: 0 5px;
+	margin-bottom: 22px;
+	display: inline-block;
+	min-height: 2rem;
+	color: #000;
+}
+.re{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+}
+.rel{
+	width: 50%;
+	height: 0.9rem;
+	overflow: hidden;
+	position: relative;
+}
+.rel .img1,.rer .img2{
+	width: 0.5rem;
+	height: auto;
+	overflow: hidden;
+}
+.rel .img1{
+	position: absolute;
+	left: 0;
+	/*left: 90%;*/
+	/*right: 0;*/
+	top: 0;
+}
+.rer .img2{
+	position: absolute;
+	/*right: 90%;*/
+	right: 0;
+	/*left: 0;*/
+	top: 0;
+}
+.rel .img1 img,.rer .img2 img{
+	width: 100%;
+	height: 100%;
+
+}
+.rer{
+	width: 50%;
+	overflow: hidden;
+	height: 0.9rem;
+	position: relative;
+}
+
+.money{
+	width: 20%;
+	height: 0.645rem;
+	position: absolute;
+	right: -25%;
+	bottom: -0.625rem;
+	font-size: 16px;
+	background: #ff00a2;
+	text-align: center;
+	line-height: 0.625rem;
+	color:#fff;
+	overflow: hidden;
+}
+
+.ziliao button{
+	display: inline-block;
+	width: 50%;
+	height: 40px;
+	border: none;
+	background: #f00;
+	color: #fff;
+	font-size:0.47rem;
+	line-height: 40px;
+	text-align: center;
+	/*background: url(../../img/3.jpg);
+	background-size: cover;*/
+}
+
+.ziliao .btn1{
+	border-right:2px solid #fff;
+}
+
+.ziliao .btn{
+	margin-bottom: 20px;
+}
+.mengban{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .7;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 888;
+
+}
+
+.shuaxin{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.shuaxin .sxl,.shuaxin .sxr{
+	position: relative;
+	width: 50%;
+	height: auto;
+}
+.shuaxin .sxl .img,.shuaxin .sxr .img{
+	width: 1rem;
+	height: auto;
+
+}
+.shuaxin .sxl .img1{
+	position: absolute;
+	/*left: 84%;*/
+	left: 0;
+}
+.shuaxin .sxr .img2{
+	position: absolute;
+	/*right: 84%;*/
+	right: 0;
+}
+.shuaxin div .img img{
+	width: 100%;
+	height: 100%;
+}
+
+.suili{
+	background: #fff;
+	width: 100%;
+	height: auto;	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 120000;
+	box-sizing:border-box;
+	padding:0.2rem;
+	font-size: 0.4rem;
+	display: none;
+	color: #000;
+}
+.suili .sl_t{
+	width: 100%;
+	height: 0.83rem;
+	line-height: 0.83rem;
+	font-size: 0.4rem;
+}
+.suili .sl_c{
+	width: 100%;
+	height: auto;
+	text-align: center;
+
+}
+.suili .sl_c input{
+	height: 1.29rem;
+	display: inline-block;
+	border:0;
+	border-bottom:1px solid #ddd;
+	background: 0;
+}
+.suili .sl_c .sub{
+	margin-top: 1rem;
+	border-radius: 5px;
+	display: inline-block;
+    width: 50%;
+    height: 40px;
+    border: none;
+    background: #f00;
+    color: #fff;
+    font-size: 0.47rem;
+    line-height: 40px;
+    text-align: center;
+}

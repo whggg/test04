@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script src="js/flexible.debug.js"></script>
+	<script src="js/flexible_css.debug.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shezhi.css">
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/immersed.js"></script>
+	<title>设置</title>
+</head>
+<body>
+	<div class="box">
+		<div class="header">
+			<div class="head_l" onclick="window.location.href='gan/daohangye.html'">
+				<div class="img">
+					<img src="img/back1.png" alt="">
+				</div>
+			</div>
+			<div class="head_r">
+				<h4>设置</h4>
+			</div>
+		</div>
+
+		<div class="nav">
+			<ul>
+				<li onclick="window.location.href='zhanghao.html'"><span>账号管理</span><div class="imgs"><img src="img/go.png" alt=""></div></li>
+				<li onclick="window.location.href='mima.html'"><span>密码修改</span><div class="imgs"><img src="img/go.png" alt=""></div></li>
+				<li onclick="window.location.href='zhifumima.html'"><span>支付密码设置</span><div class="imgs"><img src="img/go.png" alt=""></div></li>
+				<li><span>手机号</span><div class="imgs"><span class="phone">13629501406</span><img src="img/go.png" alt=""></div></li>
+			</ul>
+		</div>
+
+		<div class="footer">
+			<button onclick="window.location.href='index.html'">退出登录</button>
+		</div>
+	</div>
+
+	<script>
+		$(function(){
+			var phone = $('.phone').text();
+    		var mphone = phone.substr(0, 3) + '****' + phone.substr(7);
+    		$('.phone').text(mphone)
+		})
+	</script>
+	<script>
+	    document.addEventListener("plusready", function() {
+	        // 注册返回按键事件
+	        plus.key.addEventListener('backbutton', function() {
+	            // 事件处理
+	            window.history.back();
+	        }, false);
+	    });
+	</script>
+</body>
+</html>

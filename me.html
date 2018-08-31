@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<script src="js/flexible.debug.js"></script>
+	<script src="js/flexible_css.debug.js"></script>
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/immersed.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/me.css">
+	<title>我</title>
+</head>
+<body>
+	<div class="box">
+		<div class="header">
+			<h2>我</h2>
+			<div class="banner_r" onclick="window.location.href='xiaoxi.html'">
+				<img src="img/xinxi.png" alt="">
+				<i></i>
+			</div>
+		</div>
+
+		<div class="banner">
+			<div class="banner_l">
+				<img src="http://img2.woyaogexing.com/2018/01/09/7659db19c3243978!400x400_big.jpg" alt="">
+			</div>
+			<div class="banner_c">
+				<h2>昵称：<span>老中医</span></h2>
+				<h4>贡献值:<strong>300000</strong>分</h4>
+				<p>总额度:<span>20</span>万</p>
+			</div>
+			
+		</div>
+
+		<div class="nav">
+			<div class="nav_t">
+				<div class="nav_tl">
+					<span>待还金额:</span>
+					<b>18万</b>
+				</div>
+				<div class="nav_tr">
+					<span>本期账单额度:</span>
+					<b>12534元</b>
+				</div>
+			</div>
+			<div class="nav_c">
+				<form action="me.html">
+					<div class="nav_c1">
+						<span>存入金额</span>:
+						<input onkeyup="value=value.replace(/[^\0-9\.]/g,'')" onpaste="value=value.replace(/[^\0-9\.]/g,'')" oncontextmenu = "value=value.replace(/[^\0-9\.]/g,'')" onkeyup="function()">元
+					</div>
+					<div class="nav_c3">
+						<input type="submit" value="确定">
+					</div>
+				</form>
+				<div class="nav_c2">
+					<span>银行卡</span>:
+					<input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]/g,'')" maxlength="19">
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<ul>
+				<li><a href="">份子钱</a></li>
+				<li><a href="">黄道吉日</a></li>
+				<li><a href="">帮还</a></li>
+				<li><a href="">交友</a></li>
+				<li><a href="">敬请期待...</a></li>
+			</ul>
+		</div>
+
+		<div class="footer">
+			<div class="foots"><a href="gan/daohangye.html"><div class="imgs"><img src="img/shouye1.png" alt=""></div><span>首页</span></a></div>
+			<div class="foots"><a href="hudong.html"><div class="imgs"><img src="img/faxian1.png" alt=""></div><span>发现</span></a></div>
+			<div class="foots"><a href="xianchang.html"><div class="imgs"><img src="img/luntan1.png" alt=""></div><span>论坛</span></a></div>
+			<div class="foots"><a href="#"><div class="imgs"><img src="img/wo.png" alt=""></div><span class="show">我</span></a></div>
+		</div>
+
+		<div class="jia">
+			<img src="img/jiaru.png" alt="" onclick="window.location.href='gan/shenqing.html'">
+		</div>
+	</div>
+
+	<script>
+		$(function(){
+			$('.nav_c3 input').click(function(event) {
+				$('.nav_c3').hide();
+			});
+			$('.nav_c1 input').keyup(function(event) {
+				if ($('.nav_c1 input').val()=='') {
+					$('.nav_c3').hide();
+				}else {
+					$('.nav_c3').show();
+				}
+				
+			});
+			
+			   setInterval(function(){
+                    $('.jia img').animate({left:'0'},8000);
+                },5000);  
+		})
+	</script>
+	<script>
+	    		    // H5 plus事件处理
+			var as='pop-in';// 默认窗口动画
+			function plusReady(){
+				// 隐藏滚动条
+				plus.webview.currentWebview().setStyle({scrollIndicator:'none'});
+				// Android处理返回键
+				plus.key.addEventListener('backbutton',function(){
+					('iOS'==plus.os.name)?plus.nativeUI.confirm('确认退出？', function(e){
+						if(e.index>0){
+							plus.runtime.quit();
+						}
+					}, null, ['取消','确定']):(confirm('确认退出？')&&plus.runtime.quit());
+				},false);
+				compatibleAdjust();
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener('plusready',plusReady,false);
+			}
+	</script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+@charset 'utf-8';
+/*body{background: url(../img/2.jpg);}*/
+.box{
+	width: 100%;
+	max-width: 768px;
+	overflow: hidden;
+	height: auto;
+	margin:  0 auto;
+}
+.header{
+	width: 100%;
+	height: 1.29rem;
+	background: #ff0000;
+	text-align: center;
+	line-height: 1.29rem;
+	color: #fff;
+	font-size: 0.57rem;
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.header .img{
+	height: 0.8rem;
+	width: 0.8rem;
+	overflow: hidden;
+	position: absolute;
+	top: 0.2rem;
+	cursor: pointer;
+}
+.header .img img{
+	width: 100%;
+	height: 100%;
+}
+.head_r{
+	height: 0.8rem;
+	width: 0.8rem;
+	overflow: hidden;
+	position: absolute;
+	right: 0.1rem;
+	top: 0.2rem;
+	cursor: pointer;
+}
+.head_r img{
+	width: 100%;
+	height: 100%;
+}
+.main{
+	width: 100%;
+	box-sizing:border-box;
+	margin: 0 auto;
+	padding:0 0.55rem;
+	height: auto;
+	overflow: hidden;
+	margin-top: 1.29rem;
+}
+.mains{
+	width: 100%;
+	height: auto;
+	border: 2px solid #000;
+	margin: 0.55rem 0;
+	font-size: 0.55rem;
+}
+.mains .mains_t{
+	width: 100%;
+	overflow: hidden;
+	box-sizing:border-box;
+	padding: 0.55rem 0.2rem;
+}
+					
+.mains .mains_t .txt{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 0.2rem;
+}
+					
+.mains .mains_t span{
+	display: inline-block;
+	color: #999;
+	font-size: 0.31rem;
+}
+.mains .mains_c{
+	width: 100%;
+	overflow: hidden;
+	box-sizing:border-box;
+	padding: 0 0.4rem;
+}
+.mains .mains_c .man{
+	width: 100%;
+	margin-bottom: 0.2rem;
+}
+.mains .mains_c .man .img-dv a{
+	height: 2rem;
+	width: 2.5rem;
+	overflow: hidden;
+	display: inline-block;
+}
+.mains .mains_c .man .img-dv a img{
+	width: 100%;
+	height: 100%;
+}
+.mains .img img{
+	width: 100%;
+	height: 100%;
+}
+.mains .mains_c span{
+	width: 100%;
+	overflow: hidden;
+	text-align: justify;
+	margin-bottom: 0.1rem;
+	display: inline-block;
+	font-size: 0.47rem;
+}
+.mains .mains_t .img{
+	height: 1.4rem;
+	width: 1.66rem;
+	overflow: hidden;
+	display: inline-block;
+	border:2px solid #000;
+	vertical-align: middle;
+}
+.mains .mains_f{
+	width: 100%;
+	overflow: hidden;
+	box-sizing:border-box;
+	padding: 0.1rem 0.4rem 0 0.4rem;
+	font-size: 0.46rem;
+}
+.mains .mains_f .img{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0.46rem;
+}
+.mains .mains_f span{
+	display: inline-block;
+}
+.mains .mains_f .duihua{
+	position: relative;
+	overflow: hidden;
+	/*height: 1rem;*/
+	height: auto;
+	padding:0.15rem 0;
+}
+.mains .mains_f .duihua .img1{
+	overflow: hidden;
+	float: right;
+}
+/*.mains .mains_f .duihua .img1 img{
+	width: 100%;
+	height: 100%;
+}*/
+.pl{
+	width: 80%;
+	background: #000;
+	height: 0.6rem;
+	text-align: center;
+	line-height: 0.6rem;
+	position: absolute;
+	right: 1.07rem;
+	top: 0.2rem;
+	display: none;
+}
+.pl a{
+	float: left;
+	color: #fff;
+	width: 30%;
+	display: inline-block;
+	font-size: 0.42rem;
+} 
+.pl img{
+	vertical-align: middle;
+}
+.pl .bt2 input{
+	width: 1rem;
+	height: 0.7rem;
+	display: inline-block;
+	border: 0;
+	outline: none;
+	background: 0;
+	vertical-align: middle;
+	color: #fff;
+}
+.pl .bt2 input::placeholder{
+	color: #fff;
+	font-size: 0.42rem;
+}
+.lists{
+	box-sizing:border-box;
+	width: 100%;
+	height: auto;
+	/*height: 1rem;*/
+	background: #f7f7f7;
+	margin-top: 0.8rem;
+	font-size: 0.32rem;
+	color: #2828bb;
+	clear: both;
+	/*border:1px solid red;*/
+}
+.lists .lists_t{
+	height: auto;
+	/*text-align: justify;*/
+	border-bottom: 1px solid #ddd;
+}
+.lists .lists_t .dianzan{
+	display: inline-block;
+	height: auto;
+	overflow: hidden;
+}
+.lists .lists_t .dianzan span{
+	display: inline-block;
+	font-size: 0.2rem;
+	margin-left: -0.2rem;
+}
+.lists .lists_t .dianzan .imgss{
+	/*vertical-align: middle;*/
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	overflow: hidden;
+}
+.lists .lists_t .dianzan .imgss img{
+	width: 100%;
+	height: 100%;
+}
+.lists .lists_c{
+	clear: both;
+	height: auto;
+	
+}
+.lists .lists_c p{
+	padding: 0.1rem;
+}
+
+.lists .lists_c span{
+	color: #000;
+	text-align: justify;
+	word-wrap:break-word;
+}
+.plinp{
+	width: 100%;
+	padding: 0.1rem;
+	overflow: hidden;
+	box-sizing:border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	display: none;
+}
+.plinp input{
+	width: 80%;
+	padding:0.1rem 0;
+}
+.plinp .sub{
+	width: 20%;
+	padding: 0.06rem 0;
+}
+.footer{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+}
+.footer div{
+	float: left;
+	width: 24.75%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	background: #ff0000;
+}
+.footer div:nth-child(2){
+	margin: 0 0.2%;
+}
+.footer div:nth-child(3){
+	margin-right: 0.2%;
+}
+.footer div a{
+	width: 100%;
+	display: inline-block;
+	color: #fff;
+	font-size: 0.5rem;
+}
+.jia{
+	width: 1.2rem;
+	overflow: hidden;
+	height: 1.2rem;
+	position: fixed;
+	left: 50%;
+	bottom: 0rem;
+	transform: translate(-50%,-50%);
+	background: #ff0000;
+	border-radius: 50%;
+}
+.jia img{
+	width: 100%;
+}
+.fangda{
+	position: fixed;
+	width: 90%!important;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: auto!important;
+	z-index: 100;
+}
+.menban{
+	position: fixed;
+	width: 100%;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 100%;
+	z-index: 99;
+	background: #000;
+	opacity: .6;
+	display: none;
+}
